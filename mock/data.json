@@ -1,0 +1,50 @@
+{
+
+    "house":[
+        {
+          "id": 1,
+          "title": "Cozy Cottage Retreat",
+          "img":"/image/h1.jpeg",
+          "description": "Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat.",
+          "location": "Forest Grove, Oregon",
+          "price_per_night": 100,
+          "num_bedrooms": 1,
+          "num_bathrooms": 1,
+          "max_guests": 2,
+          "amenities": ["Wifi", "Kitchen", "Heating", "Free Parking", "Garden"],
+          "rating": 4.8,
+          "reviews_count": 56
+        },
+        {
+          "id": 2,
+          "title": "Luxury Beachfront Villa",
+          "img":"/image/h2.jpeg",
+          "description": "Experience ultimate luxury in this stunning beachfront villa with breathtaking ocean views.",
+          "location": "Maui, Hawaii",
+          "price_per_night": 500,
+          "num_bedrooms": 3,
+          "num_bathrooms": 3,
+          "max_guests": 6,
+          "amenities": ["Wifi", "Kitchen", "Air Conditioning", "Private Pool", "Beach Access", "BBQ Grill"],
+          "rating": 4.9,
+          "reviews_count": 102
+        },
+        {
+          "id": 3,
+          "title": "Downtown Loft with City Views",
+          "img":"/image/h3.jpeg",
+          "description": "Stay in style in this modern loft apartment located in the heart of the city. Enjoy stunning views of the skyline.",
+          "location": "New York City, New York",
+          "price_per_night": 250,
+          "num_bedrooms": 2,
+          "num_bathrooms": 2,
+          "max_guests": 4,
+          "amenities": ["Wifi", "Kitchen", "Gym Access", "Concierge Service", "Balcony"],
+          "rating": 4.7,
+          "reviews_count": 78
+        }
+      ]
+      
+
+}
+    
