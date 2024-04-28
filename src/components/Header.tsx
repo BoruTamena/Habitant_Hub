@@ -3,6 +3,7 @@ import { AppBar, Avatar, Box, IconButton, Stack, Toolbar, Typography } from '@mu
 import React from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image'
+import PrimarySearch from './PrimarySearch'
 
 export const Header = () => {
   return (
@@ -29,7 +30,7 @@ export const Header = () => {
           </Box>
 
           <Box>
-            <Typography>Search </Typography>
+            <PrimarySearch/>
           </Box>
 
 

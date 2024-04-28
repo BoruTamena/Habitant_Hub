@@ -7,7 +7,14 @@ export const Amenities=[
         "id":1,
         "icon":"",
         "name":"Internet"
-    }
+    },
+
+    {   
+        "id":2,
+        "icon":"",
+        "name":"Tv station"
+    },
+
 
 ]
 

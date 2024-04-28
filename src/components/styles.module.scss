@@ -4,6 +4,7 @@
   
 }
 
+
 .appbar {
     box-shadow: none;
 }
@@ -12,4 +13,17 @@
     height:100%;
     margin-top:10px;
     margin-bottom:10px
+}
+
+.box{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.img{
+    border-radius:10px;
+}
+
+.link{
+    text-decoration:none;
+    color:black;
 }

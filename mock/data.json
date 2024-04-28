@@ -42,7 +42,23 @@
           "amenities": ["Wifi", "Kitchen", "Gym Access", "Concierge Service", "Balcony"],
           "rating": 4.7,
           "reviews_count": 78
-        }
+        },
+
+
+        {
+            "id": 4,
+            "title": "Downtown Loft with City Views",
+            "img":"/image/h3.jpeg",
+            "description": "Stay in style in this modern loft apartment located in the heart of the city. Enjoy stunning views of the skyline.",
+            "location": "New York City, New York",
+            "price_per_night": 250,
+            "num_bedrooms": 2,
+            "num_bathrooms": 2,
+            "max_guests": 4,
+            "amenities": ["Wifi", "Kitchen", "Gym Access", "Concierge Service", "Balcony"],
+            "rating": 4.7,
+            "reviews_count": 78
+          }
       ]
       
 

@@ -1,13 +1,11 @@
 
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components";
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from "@/themes";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Habitant-Hub",
@@ -22,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider theme={theme}>
-      <body className={inter.className}>
-        
+      <body >
+
         <Header/>
         {children}
         
