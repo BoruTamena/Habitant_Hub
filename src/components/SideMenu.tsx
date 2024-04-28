@@ -1,24 +1,33 @@
-import { Drawer, List, ListItem, ListItemText } from '@mui/material'
+import { Box, Drawer, List, ListItem, ListItemText, Typography } from '@mui/material'
 import React from 'react'
 import { HouseCategories } from '../../constant'
+
+import styles from './styles.module.scss'
+import { House } from '@mui/icons-material'
 
 const SideMenu = () => {
   return (
     <>
-    <Drawer open={true } anchor="right">
+  
 
-        <List>
+        <List className={styles.sidmenu} sx={{bgcolor:"primary.main"}}>
 
             {
            HouseCategories.map((item,index)=><ListItem key={item.id}>
-                    <ListItemText>{item.category}</ListItemText>
+                    <ListItemText sx={{textAlign:"center"}}>
+                        <Box>
+                        {item.icon && item.icon}  
+
+                        </Box>
+                     <Typography variant="caption">{item.category}</Typography>
+                    </ListItemText>
                 </ListItem>)
             }
 
         </List>
 
         
-    </Drawer>
+   
     
     </>
   )

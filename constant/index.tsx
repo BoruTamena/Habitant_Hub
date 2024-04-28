@@ -1,3 +1,4 @@
+import { Apartment, LocationCity, MapsHomeWork, Shop, StoreMallDirectory, Warehouse } from "@mui/icons-material"
 
 
 export const Amenities=[ 
@@ -15,18 +16,38 @@ export const HouseCategories=[
     {
         "id":1,
         "category":"City Style",
-        "icon ":""
+        "icon":<LocationCity />
     },
 
-    {
-        "id":2,
-        "category":"Furnished",
-        "icon ":""
-    },
+ 
 
     {
         "id":3,
         "category":"Apartment",
+        "icon":<Apartment/>
+    },
+
+
+    {
+        "id":5,
+        "category":"Shopping Mall",
+        "icon":<StoreMallDirectory/>,
+    },
+
+    {
+        "id":6,
+        "category":"Condo",
+        "icon":<MapsHomeWork/>
+    },
+
+    {
+        "id":7,
+        "category":"Ware House",
+        "icon":<Warehouse/>
+    },
+    {
+        "id":2,
+        "category":"Furnished",
         "icon ":""
     },
 
@@ -35,22 +56,4 @@ export const HouseCategories=[
         "category":"Guest House",
         "icon ":""
     },
-    {
-        "id":5,
-        "category":"Shoping Mall",
-        "icon ":""
-    },
-
-    {
-        "id":6,
-        "category":"Condo",
-        "icon ":""
-    },
-
-    {
-        "id":7,
-        "category":"Ware House",
-        "icon ":""
-    },
-
 ]
