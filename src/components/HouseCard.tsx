@@ -9,7 +9,7 @@ import Link from 'next/link'
 const HouseCard = ({Data}:{Data:HouseListType}) => {
 
 
-    const {id,img,title,description}=Data
+    const {id,img,title,description,price_per_night}=Data
 
     console.log(title)
 
@@ -17,21 +17,26 @@ const HouseCard = ({Data}:{Data:HouseListType}) => {
     <>
     <Box className={styles.box}   >
         
-         <Image width={400} height={250} className={styles.img}   alt ="image "src={`${img}`}/> 
-           
-        
-
-            <Link href={`/house/${id}`} >
-                <Typography className={styles.link} variant='subtitle1' fontWeight="bold"> {title}</Typography>
-            </Link>
-            
-        
-            
+      <Image width={405}
+        height={250} 
+        className={styles.img} 
+        alt ="image "src={`${img}`}/> 
+      
+        <Link href={`/house/${id}`} >
+            <Typography 
+            className={styles.link} 
+            variant='subtitle1'
+            fontWeight="bold"> 
+            {title}
+            </Typography>
+        </Link>
           
-
-         <Typography variant="body2" textAlign="justify" pt={1}> {description}</Typography>
+        <Typography variant="body2"
+        textAlign="justify" pt={1}> 
+        {description}</Typography>
+        <Typography fontWeight="bold">{price_per_night} ETB</Typography>
         
-        </Box>
+    </Box>
     
     </>
   )

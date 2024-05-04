@@ -1,37 +1,36 @@
 import { Search } from '@mui/icons-material'
-import { Box, FormControl, IconButton, Stack, TextField } from '@mui/material'
+import { Box, FormControl, IconButton, Stack, TextField, Typography } from '@mui/material'
 import React from 'react'
 
 const PrimarySearch = () => {
   return (
     <>
-    <form>
-        <Box sx={{bgcolor:"secondary.main",height:"30px",padding:"10px",borderRadius:"30px",margin:"5px"}}>
-          <Stack flexDirection="row" justifyContent="space-around" alignItems="center">
-            <Box>
-            <TextField variant="standard" name="location" label="location" sx={{position:"relative",top:-20,width:"100px"}}/>
+    
+    <Stack 
+      flexDirection="row"
+      alignItems={"center"}
+      justifyContent={"space-between"}
+      sx={{bgcolor:"secondary.main",borderRadius:10,padding:1}}
+    
+    >
 
-            </Box>
-
-            <Box>
-            <TextField variant="standard" name="guest" label="Guest" sx={{position:"relative",top:-20,width:"100px"}}/>
-
-            </Box>
-
-
-            <Box>
-            <TextField variant="standard" name="guest" label="Guest" sx={{position:"relative",top:-20}} />
-
-            </Box>
-             <IconButton  variant="primary.main">
-                <Search/>
-            </IconButton>
-
-
-            </Stack>
-        </Box>
-    </form>
+      <Box ml={1}>
+        <Typography fontWeight={"bold"}>Location</Typography>
+      </Box>
+      <Box  ml={2}>
+        <Typography  fontWeight={"bold"}>Guest</Typography>
+      </Box>
+      <Box  ml={2} mr={2}>
+        <Typography  fontWeight={"bold"}>CheckIn-CheckOut</Typography>
+      </Box>
+      <IconButton>
+         <Search/>
+      </IconButton>
+    </Stack>
+    
     </>
+   
+  
   )
 }
 

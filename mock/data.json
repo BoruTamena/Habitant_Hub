@@ -59,7 +59,51 @@
             "rating": 4.7,
             "reviews_count": 78
           }
-      ]
+      ],
+
+
+    "housedetail":[
+      {
+
+          "id": 1,
+          "title": "Cozy Cottage Retreat",
+          "img":"/image/h1.jpeg",
+          "description": "Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat.",
+          "location": "Forest Grove, Oregon",
+          "price_per_night": 100,
+          "num_bedrooms": 1,
+          "num_bathrooms": 1,
+          "max_guests": 2,
+          "amenities": ["Wifi", "Kitchen", "Heating", "Free Parking", "Garden"],
+          "rating": 4.8,
+          "reviews_count": 56,
+          "host":{
+            "name":"John-Name",
+             "language":[
+              "Engish",
+              "Spanish"
+             ],
+            "education":"Has Degree In Business",
+            "location":"Recied In Addis Ababa",
+            "description":"Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat."
+          },
+
+          "review":[
+            {
+              "id":1,
+              "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+              "count":3
+            } ,
+            {
+              "id":2,
+              "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+              "count":4
+            }
+          ]
+
+
+      }
+    ]
       
 
 }
