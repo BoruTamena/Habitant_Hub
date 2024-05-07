@@ -67,8 +67,8 @@
 
           "id": 1,
           "title": "Cozy Cottage Retreat",
-          "img":"/image/h1.jpeg",
-          "description": "Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat.",
+          "img":["/image/h1.jpeg","/image/h2.jpeg","/image/h2.jpeg"],
+          "description": "We are in a building of from the 1800's, in a quiet street but in the heart of historic Turin. to 10 min. the biggest square in Europe Piazza Vittorio where ther's the night life. Convenient to all services. In the district you can find every day a local market with fresh produce, but there are also different supermarket.",
           "location": "Forest Grove, Oregon",
           "price_per_night": 100,
           "num_bedrooms": 1,

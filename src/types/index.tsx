@@ -1,4 +1,11 @@
 
+export type hostdetail= {
+  "name": string,
+  "language":  string[] ,
+  "education": string,
+  "location": string,
+  "description": string,
+}
 
 export type HouseListType ={
     id: number,

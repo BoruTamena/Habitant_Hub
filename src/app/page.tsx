@@ -4,7 +4,7 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Toys } from "@mui/icons-material";
 import { HouseCard, SideMenu } from "@/components";
 
-import GetHouse from "../utils/gethouse"
+import {GetHouse} from "../utils/gethouse"
 
 export default async function Home() {
 
