@@ -1,7 +1,7 @@
 import { Star } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
 
-type reviewProps = {
+export type reviewProps = {
     "id":number,
     "review":string,
     "count":number

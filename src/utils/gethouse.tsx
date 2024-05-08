@@ -12,12 +12,11 @@
 }
 
 
-async function GetById(id:number)   {
+async function GetById(id:string)   {
 
     const result = await fetch(`http://localhost:3001/housedetail/${id}`,{cache:"no-store"})
-    const res= result.json()
-    console.log(res)
-    return res  
+
+    return result.json() 
  }
 
 

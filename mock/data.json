@@ -102,6 +102,43 @@
           ]
 
 
+      },
+      {
+        "id": 2,
+        "title": "Luxury Beachfront Villa",
+        "img":"/image/h2.jpeg",
+        "description": "Experience ultimate luxury in this stunning beachfront villa with breathtaking ocean views.",
+        "location": "Maui, Hawaii",
+        "price_per_night": 500,
+        "num_bedrooms": 3,
+        "num_bathrooms": 3,
+        "max_guests": 6,
+        "amenities": ["Wifi", "Kitchen", "Air Conditioning", "Private Pool", "Beach Access", "BBQ Grill"],
+        "rating": 4.9,
+        "reviews_count": 102,
+        "host":{
+          "name":"Mathew Andrew",
+           "language":[
+            "Engish",
+            "Spanish"
+           ],
+          "education":"Has Degree In CSE",
+          "location":"Live In Adama",
+          "description":"Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat."
+        },
+
+        "review":[
+          {
+            "id":1,
+            "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+            "count":3
+          } ,
+          {
+            "id":2,
+            "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+            "count":4
+          }
+        ]
       }
     ]
       

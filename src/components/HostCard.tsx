@@ -12,11 +12,11 @@ const HostCard = ({Data}:{Data:hostdetail}) => {
 
   return (
   
-   <Box sx={{bgcolor:"primary.main"}}p={1} mt={1}>
+   <Box sx={{bgcolor:"primary.main"}}p={1} mt={2}>
 
     <Typography variant='h5'  textAlign="center" fontWeight="bold"> Meet Your Host </Typography>
     <Container>
-     <Image src="/image/h1.jpeg" alt="host image " width={200} height={200} />
+     <Image src="/image/person1.jpeg" alt="host image " width={250} height={200} style={{borderRadius:10}} />
       
       <Typography  variant="h5" textAlign="center" fontWeight="bold"> {name}</Typography>
 
