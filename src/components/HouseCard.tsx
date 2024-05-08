@@ -22,7 +22,7 @@ const HouseCard = ({Data}:{Data:HouseListType}) => {
         className={styles.img} 
         alt ="image "src={`${img}`}/> 
       
-        <Link href={`/house/${id}`} >
+        <Link href={`/house/${id}`} className={styles.link}  >
             <Typography 
             className={styles.link} 
             variant='subtitle1'

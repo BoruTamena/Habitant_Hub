@@ -106,7 +106,7 @@
       {
         "id": 2,
         "title": "Luxury Beachfront Villa",
-        "img":"/image/h2.jpeg",
+        "img":[  "/image/h2.jpeg", "/image/h2.jpeg", "/image/h3.jpeg"],
         "description": "Experience ultimate luxury in this stunning beachfront villa with breathtaking ocean views.",
         "location": "Maui, Hawaii",
         "price_per_night": 500,

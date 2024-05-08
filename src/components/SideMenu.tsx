@@ -10,17 +10,16 @@ import Link from 'next/link'
 
 const SideMenu = () => {
   return (
-    <>
-  
-
+    <Box sx={{overflow:"scroll",height:"100%"}} mt={1}>
         <List className={styles.sidmenu} sx={{bgcolor:"primary.main"}}>
 
             {
            HouseCategories.map((item,index)=><ListItem key={item.id}>
-                    <ListItemText sx={{textAlign:"center"}}>
-                        <Box >{item.icon && item.icon} </Box>  
+                    <ListItemText  sx={{textAlign:"center"}}>
+                        <Box sx={{fontSize:"25px",fontWeight:"bold"}}>{item.icon && item.icon} </Box>  
                         <Typography 
-                            textTransform="capitalize" 
+                           
+                            sx={{textAlign:"center"}} 
                             variant="caption">
                             {item.category}
 
@@ -34,7 +33,7 @@ const SideMenu = () => {
         
    
     
-    </>
+    </Box>
   )
 }
 

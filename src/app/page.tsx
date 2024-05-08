@@ -5,6 +5,7 @@ import { Toys } from "@mui/icons-material";
 import { HouseCard, SideMenu } from "@/components";
 
 import {GetHouse} from "../utils/gethouse"
+import SecondaryFilter from "@/components/SecondaryFilter";
 
 export default async function Home() {
 
@@ -19,6 +20,9 @@ export default async function Home() {
 
       <Grid container spacing={2}>
         <Grid item md={11}>
+
+        <SecondaryFilter/>
+
         <Grid container spacing={1}>
           {
             !is_empty && data.map(item=> <Grid item md={4}>
