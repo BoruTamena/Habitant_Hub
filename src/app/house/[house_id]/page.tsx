@@ -62,11 +62,11 @@ export default async function HouseDetail ({params:{house_id},}:{params:{house_i
 
         </Grid>
           <Grid item md={9} >
-          <Linear/>
-          <Linear/>
-          <Linear/>
-          <Linear/>
-          <Linear/>
+          <Linear count={20} helperText="Excellent" star={5}/>
+          <Linear  count={30} helperText="Very Good" star={4}/>
+          <Linear  count={25} helperText="Average" star={3}/>
+          <Linear  count={10} helperText="Poor" star={2}/>
+          <Linear  count={5} helperText="Terrible" star={1}/>
 
             {review.map((item,index)=><ReviewCard key={index} data={item}/>)}
           </Grid>

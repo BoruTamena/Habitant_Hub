@@ -1,16 +1,22 @@
 import { Box, Grid, LinearProgress, Stack, Typography } from "@mui/material";
 
-type Props = {}
+type Props = {
+  count:number,
+  star:number,
+  helperText:string,
+ 
+}
 
 const Linear = (props: Props) => {
+
+  const {count,star,helperText}=props
   return (
     
       <Grid container spacing={1}>
         <Grid item md={8}>
         <LinearProgress 
-        
          variant="determinate" 
-         value={50} 
+         value={count} 
          sx={{bgcolor:"secondary.main",
          height:15,
          padding:.5,
@@ -19,7 +25,11 @@ const Linear = (props: Props) => {
         </Grid>
 
         <Grid item md={4}>
-        <Typography textAlign=""> Excellent </Typography>
+          <Stack direction={"row"} spacing={2}>
+          <Typography textAlign="center" fontWeight={"bold"} p={1}>{star} </Typography>
+          <Typography textAlign="center"  fontWeight={"bold"}  p={1}>{helperText} </Typography>
+
+          </Stack>
 
         </Grid>
       </Grid>
