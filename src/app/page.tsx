@@ -7,10 +7,11 @@ import { HouseCard, SideMenu } from "@/components";
 import {GetHouse} from "../utils/gethouse"
 import SecondaryFilter from "@/components/SecondaryFilter";
 
-export default async function Home() {
+export default async function Home({searchParams}:any) {
 
 
-  const data = await GetHouse("")
+  console.log(searchParams)
+  const data = await GetHouse(searchParams.category)
 
   const is_empty= ! Array.isArray(data) ||data.length <1 || !data
 

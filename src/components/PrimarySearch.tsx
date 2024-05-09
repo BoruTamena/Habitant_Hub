@@ -1,8 +1,12 @@
+"use client "
+
 import { Search } from '@mui/icons-material'
 import { Box, FormControl, IconButton, Stack, TextField, Typography } from '@mui/material'
 import React from 'react'
 
 const PrimarySearch = () => {
+
+
   return (
     <>
     

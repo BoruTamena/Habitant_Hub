@@ -2,7 +2,9 @@
 
  async function GetHouse(category:string)   {
 
-   const result = await fetch("http://localhost:3001/house",{cache:"no-store"})
+   const url=category?`http://localhost:3001/house/?category=${category}`:`http://localhost:3001/house`
+
+   const result = await fetch(url,{cache:"no-store"})
    const res= result.json()
    return res
     
