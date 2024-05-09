@@ -4,6 +4,7 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import PrimarySearch from './PrimarySearch'
+import UserButton from './UserButton'
 
 export const Header = () => {
   return (
@@ -12,22 +13,7 @@ export const Header = () => {
       <Toolbar>
         <Stack width="100%" justifyContent="space-between" alignItems={"center"} flexDirection={"row"}>
 
-          <Box sx={{bgcolor:"secondary.main",borderRadius:10}}>
-              <Stack alignItems="center" flexDirection="row">
-
-                <Box >
-                  <Avatar alt="user" src="/image/h1.jpeg" />
-                </Box>
-                <Box pl={1}>
-                   <Typography>Boru </Typography>
-                </Box>
-
-                <IconButton>
-                  <DensityMedium/>
-                </IconButton>
-
-              </Stack>
-          </Box>
+         <UserButton/>
 
           <Box>
             <PrimarySearch/>

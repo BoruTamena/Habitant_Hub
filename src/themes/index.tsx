@@ -29,6 +29,24 @@ export const theme=createTheme({
         
     
     },
+
+    components:{
+        MuiPopover:{
+            styleOverrides:{
+                root:{
+                    
+                }
+            }
+        },
+        MuiPaper:{
+            styleOverrides:{
+                root:{
+                    backgroundColor:"primary",
+                    
+                }
+            }
+        }
+    }
   
     
 })

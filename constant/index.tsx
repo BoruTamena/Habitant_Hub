@@ -9,7 +9,7 @@ import {
 export const HouseCategories = [
   {
     id: 1,
-    category: 'House',
+    category: 'Farms',
     icon: <FaHome />,
   },
   {

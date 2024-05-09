@@ -11,10 +11,11 @@ import { Box, Container, Grid, Rating, Typography } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 
-export default async function HouseDetail ({params:{house_id},}:{params:{house_id:string}}){
+export default async function HouseDetail ({params:{house_id}}:{params:{house_id:string}}){
   
   
   console.log(house_id)
+
   const data = await GetById(house_id)
   const {host,description,review,rating,img,amenities}=data
 
