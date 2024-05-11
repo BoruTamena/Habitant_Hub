@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Container, List, ListItem, ListItemIcon, ListItemText, Typography} from '@mui/material'
+import {Box, Container, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography} from '@mui/material'
 import { hostdetail } from '@/types'
 import { CastForEducation, Language, LocationCity, Map } from '@mui/icons-material'
 import Image from 'next/image'
@@ -12,34 +12,43 @@ const HostCard = ({Data}:{Data:hostdetail}) => {
 
   return (
   
-   <Box sx={{bgcolor:"primary.main"}}p={1} mt={2}>
+   <Box sx={{bgcolor:"primary.main",textAlign:"center"}}p={1} mt={2}>
 
-    <Typography variant='h5'  textAlign="center" fontWeight="bold"> Meet Your Host </Typography>
+    <Typography variant='h5'  textAlign="center" fontWeight="bold" pb={1}> Meet Your Host </Typography>
+    
     <Container>
-     <Image src="/image/person1.jpeg" alt="host image " width={250} height={200} style={{borderRadius:10}} />
+      <Image src="/image/person1.jpeg" 
+        alt="host image " 
+        width={250} 
+        height={200} 
+        style={{borderRadius:10}} 
+        
+        />
       
-      <Typography  variant="h5" textAlign="center" fontWeight="bold"> {name}</Typography>
+           <Typography  variant="h5" textAlign="center" fontWeight="bold" pt={1}> {name}</Typography>
 
       <List dense>
-        <ListItemText>
-          <ListItemIcon >
+      <ListItem>
+        <ListItemIcon >
             <Language/>
-          </ListItemIcon>
-          {language.join(" , ")}
-          </ListItemText>
-        <ListItemText>
+        </ListItemIcon>
+        <ListItemText>{language.join(" , ")}</ListItemText>
+        </ListItem>
+        
+        <ListItem>
            <ListItemIcon>
               <CastForEducation/>
             </ListItemIcon>
-          {education}
-          </ListItemText>
+          <ListItemText>{education} </ListItemText>
+        </ListItem>
 
-          <ListItemText>
-           <ListItemIcon>
-             <Map/>
-            </ListItemIcon>
-          {location}
-          </ListItemText>
+        <ListItem>
+          <ListItemIcon>
+              <Map/>
+           </ListItemIcon>
+           <ListItemText>{location} </ListItemText>
+        </ListItem>
+          
       </List>
     </Container>
 

@@ -2,9 +2,11 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from "@/themes";
+import { Box, Container, CssBaseline, Grid, Stack, Typography } from "@mui/material";
+import { CopyAll, Copyright } from "@mui/icons-material";
 
 
 export const metadata: Metadata = {
@@ -20,15 +22,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider theme={theme}>
-      <body >
+     
+        <body >
+          <Box sx={{margin:"10px"}}>
+            <Header/>
+            {children}
+          </Box>
 
-        <Header/>
-        {children}
-        
+          <Box bgcolor={"secondary.light"} mt={5} sx={{position:"relative",bottom:"0px",width:"100%",height:"100%"}}>
+           
+           <Footer/>
+
+          </Box>
+      
         </body>
+        
 
       </ThemeProvider>
    
+    
     </html>
   );
 }
