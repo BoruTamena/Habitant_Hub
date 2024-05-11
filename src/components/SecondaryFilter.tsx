@@ -1,5 +1,6 @@
 import { Box, Button, Stack } from "@mui/material";
 import { Amenities } from "../../constant/Amenities";
+import { Filter2Rounded, FilterDrama } from "@mui/icons-material";
 
 
 
@@ -18,9 +19,14 @@ const SecondaryFilter = (props: Props) => {
       <Button
        variant="contained"
        color="secondary" 
-       sx={{boxShadow:"none",borderRadius:10,marginRight:5}} >
+       sx={{boxShadow:"none",borderRadius:5}} 
+  
+       >
         Filter
       </Button>
+
+
+      
 
     </Stack>
 
