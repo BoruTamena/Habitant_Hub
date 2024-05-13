@@ -4,7 +4,7 @@ import { createTheme } from "@mui/material";
 import {Poppins } from 'next/font/google';
 
 
-const roboto =Poppins({
+const poppins =Poppins({
     weight: ['300', '400', '500', '700'],
     subsets: ['latin'],
     display: 'swap',
@@ -13,7 +13,7 @@ const roboto =Poppins({
 export const theme=createTheme({
 
     typography: {
-        fontFamily: roboto.style.fontFamily,
+        fontFamily: poppins.style.fontFamily,
       },
 
     palette:{

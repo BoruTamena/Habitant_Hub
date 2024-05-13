@@ -1,6 +1,6 @@
 Data Base Design 
 
-    Users Table:
+#   Users Table:
         UserID (Primary Key)
         Username
         Password (hashed)
@@ -8,7 +8,7 @@ Data Base Design
         UserType (guest, host, superadmin)
         Other relevant fields like name, phone number, etc.
 
-    Properties Table:
+#    Properties Table:
         PropertyID (Primary Key)
         HostID (Foreign Key referencing Users.UserID)
         Title
@@ -26,21 +26,21 @@ Data Base Design
         Cancellation policy
         Other property details
 
-    PropertyAmenities Table (Many-to-Many relationship between Properties and Amenities):
+#    PropertyAmenities Table (Many-to-Many relationship between Properties and Amenities):
         PropertyID (Foreign Key referencing Properties.PropertyID)
         AmenityID (Foreign Key referencing Amenities.AmenityID)
 
-    Amenities Table:
+#    Amenities Table:
         AmenityID (Primary Key)
         Name
         Description
 
-    Images Table:
+#    Images Table:
         ImageID (Primary Key)
-        PropertyID (Foreign Key referencing Properties.PropertyID)
+        PropertyID (Foreign Key refer of bedroomerencing Properties.PropertyID)
         ImageURL
 
-    Reviews Table:
+#    Reviews Table:
         ReviewID (Primary Key)
         PropertyID (Foreign Key referencing Properties.PropertyID)
         ReviewerID (Foreign Key referencing Users.UserID)
@@ -48,7 +48,7 @@ Data Base Design
         Comment
         Date
 
-    Bookings Table:
+#    Bookings Table:
         BookingID (Primary Key)
         PropertyID (Foreign Key referencing Properties.PropertyID)
         GuestID (Foreign Key referencing Users.UserID)
@@ -59,7 +59,7 @@ Data Base Design
         PaymentStatus (e.g., paid, unpaid)
         Other relevant booking details
 
-    BookingPayments Table:
+#    BookingPayments Table:
         PaymentID (Primary Key)
         BookingID (Foreign Key referencing Bookings.BookingID)
         PaymentAmount
@@ -67,7 +67,7 @@ Data Base Design
         PaymentMethod
         TransactionID (for tracking payment transactions)
 
-    Conversations Table (for messaging between users):
+#    Conversations Table (for messaging between users):
         ConversationID (Primary Key)
         SenderID (Foreign Key referencing Users.UserID)
         ReceiverID (Foreign Key referencing Users.UserID)
@@ -75,7 +75,7 @@ Data Base Design
         Timestamp
         ConversationStatus (e.g., active, archived)
 
-    Admins Table:
+#    Admins Table:
         AdminID (Primary Key)
         Username
         Password (hashed)
@@ -88,7 +88,7 @@ Data Base Design
         VerificationStatus (e.g., pending, approved, rejected)
         VerificationDetails (documents uploaded by host for verification)
 
-    Locations Table:
+#    Locations Table:
         LocationID (Primary Key)
         City
         State/Province
@@ -97,12 +97,12 @@ Data Base Design
         Latitude
         Longitude
 
-    PropertyRules Table:
+#    PropertyRules Table:
         RuleID (Primary Key)
         PropertyID (Foreign Key referencing Properties.PropertyID)
         RuleDescription
 
-    PropertyTags Table:
+#    PropertyTags Table:
         TagID (Primary Key)
         PropertyID (Foreign Key referencing Properties.PropertyID)
         TagName
@@ -113,11 +113,7 @@ Data Base Design
         Date
         AvailabilityStatus (e.g., available, booked)
 
-    PropertyRatings Table:
-        RatingID (Primary Key)
-        PropertyID (Foreign Key referencing Properties.PropertyID)
-        RatingValue
-        RatedByUserID (Foreign Key referencing Users.UserID)
+ 
 
     PropertyViews Table:
         ViewID (Primary Key)
@@ -125,12 +121,12 @@ Data Base Design
         ViewerID (Foreign Key referencing Users.UserID)
         ViewDateTime
 
-    PropertyFavorites Table:
+#    PropertyFavorites Table:
         FavoriteID (Primary Key)
         PropertyID (Foreign Key referencing Properties.PropertyID)
         UserID (Foreign Key referencing Users.UserID)
 
-    PropertyRulesEnforcement Table:
+#    PropertyRulesEnforcement Table:
         EnforcementID (Primary Key)
         BookingID (Foreign Key referencing Bookings.BookingID)
         RuleID (Foreign Key referencing PropertyRules.RuleID)
@@ -143,7 +139,7 @@ Data Base Design
         CommentText
         CommentDate
 
-    PropertyTransactions Table:
+#    PropertyTransactions Table:
         TransactionID (Primary Key)
         PropertyID (Foreign Key referencing Properties.PropertyID)
         TransactionType (e.g., rental fee, cleaning fee, security deposit)
@@ -156,7 +152,7 @@ Data Base Design
         Date
         AvailableRooms
 
-    PropertyComplaints Table:
+#    PropertyComplaints Table:
         ComplaintID (Primary Key)
         PropertyID (Foreign Key referencing Properties.PropertyID)
         ComplainantID (Foreign Key referencing Users.UserID)

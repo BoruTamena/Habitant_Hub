@@ -16,11 +16,20 @@ const HouseCard = ({Data}:{Data:HouseListType}) => {
   return (
     <>
     <Box className={styles.box}   >
+
+    <Box>
         
-      <Image width={405}
+      <Image 
+
+        // layout='responsive'
+        objectFit='cover'
+        width={405}
         height={250} 
         className={styles.img} 
         alt ="image "src={`${img}`}/> 
+
+
+        </Box>
       
         <Link href={`/house/${id}`} className={styles.link}  >
             <Typography 
