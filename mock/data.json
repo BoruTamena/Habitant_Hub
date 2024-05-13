@@ -1,0 +1,151 @@
+{
+
+    "house":[
+        {
+          "id": 1,
+          "category":"Farms",
+          "title": "Cozy Cottage Retreat",
+          "img":"/image/h1.jpeg",
+          "description": "Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat.",
+          "location": "Forest Grove, Oregon",
+          "price_per_night": 100,
+          "num_bedrooms": 1,
+          "num_bathrooms": 1,
+          "max_guests": 2,
+          "amenities": ["Wifi", "Kitchen", "Heating", "Free Parking", "Garden"],
+          "rating": 4.8,
+          "reviews_count": 56
+        },
+        {
+          "id": 2,
+          "category":"Apartment",
+          "title": "Luxury Beachfront Villa",
+          "img":"/image/h2.jpeg",
+          "description": "Experience ultimate luxury in this stunning beachfront villa with breathtaking ocean views.",
+          "location": "Maui, Hawaii",
+          "price_per_night": 500,
+          "num_bedrooms": 3,
+          "num_bathrooms": 3,
+          "max_guests": 6,
+          "amenities": ["Wifi", "Kitchen", "Air Conditioning", "Private Pool", "Beach Access", "BBQ Grill"],
+          "rating": 4.9,
+          "reviews_count": 102
+        },
+        {
+          "id": 3,
+          "category":"Rural",
+          "title": "Downtown Loft with City Views",
+          "img":"/image/h3.jpeg",
+          "description": "Stay in style in this modern loft apartment located in the heart of the city. Enjoy stunning views of the skyline.",
+          "location": "New York City, New York",
+          "price_per_night": 250,
+          "num_bedrooms": 2,
+          "num_bathrooms": 2,
+          "max_guests": 4,
+          "amenities": ["Wifi", "Kitchen", "Gym Access", "Concierge Service", "Balcony"],
+          "rating": 4.7,
+          "reviews_count": 78
+        },
+
+
+        {
+            "id": 4,
+            "title": "Downtown Loft with City Views",
+            "category":"Farms",
+            "img":"/image/h3.jpeg",
+            "description": "Stay in style in this modern loft apartment located in the heart of the city. Enjoy stunning views of the skyline.",
+            "location": "New York City, New York",
+            "price_per_night": 250,
+            "num_bedrooms": 2,
+            "num_bathrooms": 2,
+            "max_guests": 4,
+            "amenities": ["Wifi", "Kitchen", "Gym Access", "Concierge Service", "Balcony"],
+            "rating": 4.7,
+            "reviews_count": 78
+          }
+      ],
+
+
+    "housedetail":[
+      {
+
+          "id": 1,
+          "title": "Cozy Cottage Retreat",
+          "img":["/image/h1.jpeg","/image/h2.jpeg","/image/h2.jpeg"],
+          "description": "We are in a building of from the 1800's, in a quiet street but in the heart of historic Turin. to 10 min. the biggest square in Europe Piazza Vittorio where ther's the night life. Convenient to all services. In the district you can find every day a local market with fresh produce, but there are also different supermarket.",
+          "location": "Forest Grove, Oregon",
+          "price_per_night": 100,
+          "num_bedrooms": 1,
+          "num_bathrooms": 1,
+          "max_guests": 2,
+          "amenities": ["Wifi", "Kitchen", "Heating", "Free Parking", "Garden"],
+          "rating": 4.8,
+          "reviews_count": 56,
+          "host":{
+            "name":"John-Name",
+             "language":[
+              "Engish",
+              "Spanish"
+             ],
+            "education":"Has Degree In Business",
+            "location":"Recied In Addis Ababa",
+            "description":"Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat."
+          },
+
+          "review":[
+            {
+              "id":1,
+              "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+              "count":3
+            } ,
+            {
+              "id":2,
+              "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+              "count":4
+            }
+          ]
+
+
+      },
+      {
+        "id": 2,
+        "title": "Luxury Beachfront Villa",
+        "img":[  "/image/h2.jpeg", "/image/h2.jpeg", "/image/h3.jpeg"],
+        "description": "Experience ultimate luxury in this stunning beachfront villa with breathtaking ocean views.",
+        "location": "Maui, Hawaii",
+        "price_per_night": 500,
+        "num_bedrooms": 3,
+        "num_bathrooms": 3,
+        "max_guests": 6,
+        "amenities": ["Wifi", "Kitchen", "Air Conditioning", "Private Pool", "Beach Access", "BBQ Grill"],
+        "rating": 4.9,
+        "reviews_count": 102,
+        "host":{
+          "name":"Mathew Andrew",
+           "language":[
+            "Engish",
+            "Spanish"
+           ],
+          "education":"Has Degree In CSE",
+          "location":"Live In Adama",
+          "description":"Escape to this charming cottage nestled in the woods. Perfect for a romantic getaway or a solo retreat."
+        },
+
+        "review":[
+          {
+            "id":1,
+            "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+            "count":3
+          } ,
+          {
+            "id":2,
+            "review":"From the moment you enter, the ambiance envelopes you in warmth and sophistication. The soft glow of candlelight dances on the walls, while the aroma of carefully curated spices fills the air,promising a symphony of flavors yet to be discovered",
+            "count":4
+          }
+        ]
+      }
+    ]
+      
+
+}
+    

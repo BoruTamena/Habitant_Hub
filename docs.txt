@@ -1,0 +1,161 @@
+Data Base Design 
+
+#   Users Table:
+        UserID (Primary Key)
+        Username
+        Password (hashed)
+        Email
+        UserType (guest, host, superadmin)
+        Other relevant fields like name, phone number, etc.
+
+#    Properties Table:
+        PropertyID (Primary Key)
+        HostID (Foreign Key referencing Users.UserID)
+        Title
+        Description
+        LocationID (Foreign Key referencing Locations.LocationID)
+        Address
+        PropertyType
+        Price
+        Number of bedrooms
+        Number of bathrooms
+        Maximum guests allowed
+        Minimum stay duration
+        Check-in time
+        Check-out time
+        Cancellation policy
+        Other property details
+
+#    PropertyAmenities Table (Many-to-Many relationship between Properties and Amenities):
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        AmenityID (Foreign Key referencing Amenities.AmenityID)
+
+#    Amenities Table:
+        AmenityID (Primary Key)
+        Name
+        Description
+
+#    Images Table:
+        ImageID (Primary Key)
+        PropertyID (Foreign Key refer of bedroomerencing Properties.PropertyID)
+        ImageURL
+
+#    Reviews Table:
+        ReviewID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        ReviewerID (Foreign Key referencing Users.UserID)
+        Rating
+        Comment
+        Date
+
+#    Bookings Table:
+        BookingID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        GuestID (Foreign Key referencing Users.UserID)
+        CheckInDate
+        CheckOutDate
+        TotalPrice
+        BookingStatus (e.g., pending, confirmed, cancelled)
+        PaymentStatus (e.g., paid, unpaid)
+        Other relevant booking details
+
+#    BookingPayments Table:
+        PaymentID (Primary Key)
+        BookingID (Foreign Key referencing Bookings.BookingID)
+        PaymentAmount
+        PaymentDate
+        PaymentMethod
+        TransactionID (for tracking payment transactions)
+
+#    Conversations Table (for messaging between users):
+        ConversationID (Primary Key)
+        SenderID (Foreign Key referencing Users.UserID)
+        ReceiverID (Foreign Key referencing Users.UserID)
+        Message
+        Timestamp
+        ConversationStatus (e.g., active, archived)
+
+#    Admins Table:
+        AdminID (Primary Key)
+        Username
+        Password (hashed)
+        Email
+        Other relevant fields
+
+    HostVerification Table (for verifying host identity):
+        VerificationID (Primary Key)
+        HostID (Foreign Key referencing Users.UserID)
+        VerificationStatus (e.g., pending, approved, rejected)
+        VerificationDetails (documents uploaded by host for verification)
+
+#    Locations Table:
+        LocationID (Primary Key)
+        City
+        State/Province
+        Country
+        Zip Code
+        Latitude
+        Longitude
+
+#    PropertyRules Table:
+        RuleID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        RuleDescription
+
+#    PropertyTags Table:
+        TagID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        TagName
+
+    PropertyAvailability Table:
+        AvailabilityID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        Date
+        AvailabilityStatus (e.g., available, booked)
+
+ 
+
+    PropertyViews Table:
+        ViewID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        ViewerID (Foreign Key referencing Users.UserID)
+        ViewDateTime
+
+#    PropertyFavorites Table:
+        FavoriteID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        UserID (Foreign Key referencing Users.UserID)
+
+#    PropertyRulesEnforcement Table:
+        EnforcementID (Primary Key)
+        BookingID (Foreign Key referencing Bookings.BookingID)
+        RuleID (Foreign Key referencing PropertyRules.RuleID)
+        EnforcementStatus (e.g., enforced, not enforced)
+
+    PropertyComments Table:
+        CommentID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        UserID (Foreign Key referencing Users.UserID)
+        CommentText
+        CommentDate
+
+#    PropertyTransactions Table:
+        TransactionID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        TransactionType (e.g., rental fee, cleaning fee, security deposit)
+        TransactionAmount
+        TransactionDate
+
+    PropertyAvailabilities Table:
+        AvailabilityID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        Date
+        AvailableRooms
+
+#    PropertyComplaints Table:
+        ComplaintID (Primary Key)
+        PropertyID (Foreign Key referencing Properties.PropertyID)
+        ComplainantID (Foreign Key referencing Users.UserID)
+        ComplaintText
+        ComplaintDate
+        ComplaintStatus (e.g., open, resolved)
