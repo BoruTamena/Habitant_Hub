@@ -26,7 +26,7 @@ export default async function Home({searchParams}:any) {
 
         <Grid container spacing={1}>
           {
-            !is_empty && data.map(item=> <Grid item md={4}>
+            !is_empty && data.map((item,index)=> <Grid key={index} item md={4}>
                <HouseCard Data={item}/>
             </Grid>)
           }

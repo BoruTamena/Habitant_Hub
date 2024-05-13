@@ -77,7 +77,7 @@ const Contact=[
 
     <Typography fontWeight={"bold"}> Company</Typography>
     {
-        Company.map((item,index)=><Typography variant="body2" textTransform={"capitalize"} p={1}>{item.name}</Typography>)
+        Company.map((item,index)=><Typography key={index} variant="body2" textTransform={"capitalize"} p={1}>{item.name}</Typography>)
     }
     
 
@@ -88,7 +88,7 @@ const Contact=[
 
   <Typography fontWeight={"bold"}>Contact</Typography>
   {
-        Contact.map((item,index)=><Typography variant="body2" textTransform={"capitalize"} p={1}>{item.name}</Typography>)
+        Contact.map((item,index)=><Typography key={index} variant="body2" textTransform={"capitalize"} p={1}>{item.name}</Typography>)
   }
 
   </Grid>
@@ -100,7 +100,7 @@ const Contact=[
     <Stack direction={"row"} spacing={1} useFlexGap flexWrap={"wrap"} alignItems={"center"} >
 
         {
-            HouseCategories.map((item,index)=><Chip label={item.category}/>)
+            HouseCategories.map((item,index)=><Chip key={index} label={item.category}/>)
         }
 
     </Stack>

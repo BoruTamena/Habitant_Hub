@@ -13,7 +13,7 @@ const SecondaryFilter = (props: Props) => {
 
     <Stack direction={"row"} spacing={2}  >
       {
-        Amenities.map((item,index)=><span style={{fontSize:"25px"}}>{item.icon}</span>)
+        Amenities.map((item,index)=><span key={index} style={{fontSize:"25px"}}>{item.icon}</span>)
       }
 
       <Button
