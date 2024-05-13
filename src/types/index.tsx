@@ -21,3 +21,9 @@ export type HouseListType ={
     rating : number,
     reviews_count: number
   }
+
+export type reviewType={
+  id:number,
+  review:string,
+  count:number
+} 

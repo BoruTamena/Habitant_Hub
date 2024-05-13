@@ -5,6 +5,7 @@ import HouseImagelist from '@/components/HouseImagelist'
 import Linear from '@/components/Linear'
 import ReservationCard from '@/components/ReservationCard'
 import ReviewCard from '@/components/ReviewCard'
+import { reviewType } from '@/types'
 import { GetById } from '@/utils/gethouse'
 import { Star } from '@mui/icons-material'
 import { Box, Container, Grid, Rating, Typography } from '@mui/material'
@@ -69,7 +70,7 @@ export default async function HouseDetail ({params:{house_id}}:{params:{house_id
           <Linear  count={10} helperText="Poor" star={2}/>
           <Linear  count={5} helperText="Terrible" star={1}/>
 
-            {review.map((item,index)=><ReviewCard key={index} data={item}/>)}
+            {review.map((item:reviewType,index:number)=><ReviewCard key={index} data={item}/>)}
           </Grid>
           
         </Grid>
